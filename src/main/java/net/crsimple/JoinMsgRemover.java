@@ -37,6 +37,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Mod(JoinMsgRemover.MOD_ID)
 public class JoinMsgRemover {
@@ -44,6 +45,6 @@ public class JoinMsgRemover {
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public JoinMsgRemover(IEventBus modEventBus, ModContainer modContainer) {
+        LOGGER.info("Initializing {}",MOD_ID);
     }
-
 }
